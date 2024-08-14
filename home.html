@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - My Website</title>
+        <style>
+          /* Reset some default styles */
+          body, h1, h2, h3, p, ul, li { margin: 0; padding: 0; }
+      
+          /* Global styles */
+          body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+          }
+      
+          /* Header styles */
+          /* header {
+            background-color: #333;
+            padding: 20px;
+            color: #fff;
+          } */
+      
+          header nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+          }
+      
+          header nav ul li {
+            margin: 0 10px;
+          }
+      
+          header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+          }
+      
+          /* Hero section */
+          .hero {
+            background-image: url('C:\Tạo lập web\Web Orange\Chiến dịch\Ảnh bìa Facebook (1).png');
+            background-size: cover;
+            background-position: center;
+            height: 490px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+          }
+      
+          
+      
+          /* Product categories */
+          .category-section {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            flex-grow: 1;
+          }
+      
+          .category-item {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+          }
+      
+          .category-item:hover {
+            transform: translateY(-5px);
+          }
+      
+          .category-item img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+          }
+      
+          .category-item h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+          }
+      
+          .category-item p {
+            font-size: 14px;
+            color: #666;
+          }
+      
+          /* Footer styles */
+          /* footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+          } */
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sản phẩm chăm sóc da</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <!-- External CSS -->
+        <link rel="stylesheet" href="styles/shop.css" type="text/css">
+    
+        <!-- Google Fonts -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Yeseva+One&display=swap"
+        rel="stylesheet">
+    
+        <!-- Title -->
+        <title>skin | Shop</title>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+        <!-- JavaScript -->
+        <script type="text/javascript" src="script.js" async defer></script>
+    
+        <!-- BootStrap JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+      </head>
+<body>
+    <header>
+        <!-- <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </nav> -->
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-light fixed-top justify-content-center">
+          <ul class="nav">
+              <li class="nav-item">
+                  <a target="_blank" class="nav-link active" href="home.html">Trang chủ</a>
+              </li>
+              <li class="nav-item mr-5">
+                  <a target="_blank" class="nav-link active" href="aboutUs.html"> Về chúng tôi
+                      </a>
+              </li>
+              <!-- Brand Name -->
+              <li class="brand-name ml-5 mr-5">
+                  <h1 style="color:rgb(255, 166, 0);">Orange</h1>
+
+              </li>
+              <li class="nav-item ml-5">
+                  <a target="_blank" class="nav-link active" href="login.html">Login</a>
+              </li>
+              <li class="nav-item ml-5">
+                  <a class="cartInfo nav-link active" data-toggle="modal" data-target="#cart" href="#">Giỏ hàng (<span
+                          class="totalCount"></span>)</a>
+              </li>
+          </ul>
+      </nav>
+    </header>
+    <div class="hero">
+        <img src="C:\Tạo lập web\Web Orange\Chiến dịch\Ảnh bìa Facebook (1).png" alt="Bìa" style="width: 100%; height: 100%; object-fit: cover;">
+        
+    </div>
+
+    <div class="category-section">
+        <div class="category-item" onclick="window.location.href='da.html'">
+            <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/01/Page-001-025201.png" alt="Skin Care">
+              <h3>Skin Care</h3>
+              <p>Explore our skin care products</p>
+        </div>
+            <div class="category-item" onclick="window.location.href='toc.html'">
+              <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/09/Page-002-025209.png" alt="Hair Care">
+              <h3>Hair Care</h3>
+              <p>Discover our hair care solutions</p>
+            </div>
+            <div class="category-item" onclick="window.location.href='makeup.html'">
+              <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/17/Page-003-025217.png" alt="Makeup">
+              <h3>Makeup</h3>
+              <p>Browse our makeup collection</p>
+            </div>
+            <div class="category-item" onclick="window.location.href='bodycare.html'">
+              <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Page-005-025240.png" alt="Body Care">
+              <h3>Body Care</h3>
+              <p>Find your perfect body care products</p>
+            </div>
+            <div class="category-item" onclick="window.location.href='other.html'">
+              <img src="https://static.thcdn.com/images/small/webp/widgets/121-us/40/Page-005-025240.png" alt="Other Products">
+              <h3>Other Products</h3>
+              <p>Choose natural fragrances and essential oils</p>
+            </div>
+        </div>
+    <footer>
+        <!-- <p>&copy; 2024 My Website. All rights reserved.</p> -->
+        <div class="container pt-5">
+          <div class="row">
+              <div class="col-sm">
+                  <!-- Contact -->
+                  <h6>Contact</h6>
+                  <p class="contact">cskhOrange@gmail.com <br></p>
+                  <p class="contact">(012) 345 6789<br></p>
+                  <p class="contact"> 1 Mỹ Đình, Phường Mỹ Đình 1, Quận Nam Từ Liêm, Hà Nội</p>
+              </div>
+              <div class="col-sm">
+                  <!-- Keep In Touch -->
+              </div>
+              <div class="col-sm">
+                  <!-- Support -->
+                  <h6>Support</h6>
+                  <p class="support">FAQ <br></p>
+                  <p class="support">Stocklist <br></p>
+                  <p class="support">Press<br></p>
+                  <p class="support">Affiliates<br></p>
+              </div>
+              <div class="col-sm">
+                  <!-- Social Media -->
+                  <a class="social-media-links" target="_blank" href="https://www.facebook.com/">
+                      <img class="social-media-logos" alt="Responsive image" src="C:\Tạo lập web\Web Orange\ảnh\Facebook logo.png" width="50" height="50">
+                  </a>
+                  <a class="social-media-links" target="_blank" href="https://www.messenger.com/">
+                      <img class="social-media-logos" alt="Responsive image" src="C:\Tạo lập web\Web Orange\ảnh\Facebook messenger logo.png" width="50" height="50">
+                  </a>
+                  <a class="social-media-links" target="_blank" href="https://www.google.com/">
+                      <img class="social-media-logos" alt="Responsive image" src="" width="50" height="50">
+                  </a>
+
+                  </a>
+                  <br>
+
+              </div>
+          </div>
+      </div>
+      <!-- Copyright and Terms -->
+      &copy; 2024 My Website. All rights reserved.
+    </footer>
+</body>
+</html>

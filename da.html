@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản phẩm chăm sóc da</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles/shop.css" type="text/css">
+
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Yeseva+One&display=swap"
+    rel="stylesheet">
+
+    <!-- Title -->
+    <title>skin | Shop</title>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="script.js" async defer></script>
+
+    <!-- BootStrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-light fixed-top justify-content-center">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link active" href="home.html">Trang chủ</a>
+                </li>
+                <li class="nav-item mr-5">
+                    <a target="_blank" class="nav-link active" href="aboutUs.html"> Về chúng tôi
+                        </a>
+                </li>
+                <!-- Brand Name -->
+                <li class="brand-name ml-5 mr-5">
+                    <h1 style="color:rgb(255, 166, 0);">Orange</h1>
+                </li>
+                <li class="nav-item ml-5">
+                    <a target="_blank" class="nav-link active" href="login.html">Login</a>
+                </li>
+                <li class="nav-item ml-5">
+                    <a class="cartInfo nav-link active" data-toggle="modal" data-target="#cart" href="#">Giỏ hàng (<span
+                            class="totalCount"></span>)</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class=" main container justify-content-center pt-5">
+        <h1 class="pt-5">Products</h1>
+        <div class="container-fluid pt-5">
+            <div class="row">
+
+                <!-- Item 1 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item1.html">
+                            <img src="C:\Tạo lập web\Web Orange\sản phẩm\coco gel rửa mặt bí đao.png" class="card-img-top" alt="Responsive image" width="200" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Gel rửa mặt bí đao Cocoon 140ml</p>
+                            <!-- Price -->
+                            <p class="price">150.000 VNĐ</p>
+                            <a href="#" data-name="Sạch sâu, loại bỏ bụi nhờn" data-price="150.000 VNĐ" class="cartBtn
+                             btn btn-light pl-5 pr-5">
+                                Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item2.html">
+                            <img src="C:\Tạo lập web\Web Orange\sản phẩm\combo homelab chăm sóc da ban ngày .png" class="card-img-top" alt="Responsive image" width="250" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Combo Homelab chăm sóc da ban ngày</p>
+                            <!-- Price -->
+                            <p class="price">860.000 VNĐ</p>
+                            <a href="#" data-name="Combo chăm sóc da ban ngày" data-price="860.000 VNĐ"
+                                class="cartBtn btn btn-light pl-5 pr-5">
+                                Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item3.html">
+                            <img src="C:\Tạo lập web\Web Orange\sản phẩm\homelab rửa mặt tơ tằm.png" class="card-img-top" alt="Responsive image" width="200" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Sữa rửa mặt tơ tằm Homelab </p>
+                            <!-- Price -->
+                            <p class="price">90.000 VNĐ</p>
+                            <a href="#" data-name="Sữa rửa mặt tơ tằm" data-price="90.000 VNĐ"
+                                class="cartBtn btn btn-light pl-5 pr-5">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="row pt-5">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item4.html">
+                            <img src="C:\Tạo lập web\Web Orange\sản phẩm\homelab Kem dưỡng ẩm lão hóa tơ tằm.png" class="card-img-top" alt="Responsive image" width="200" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Kem dưỡng ẩm chống lão hóa tơ tằm Homelab
+                            </p>
+                            <!-- Price -->
+                            <p class="price">320.000 VNĐ</p>
+                            <a href="#" data-name="Kem dưỡng ẩm chống lão hóa tơ tằm" data-price="320.000 VNĐ"
+                                class="cartBtn btn btn-light pl-5 pr-5">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item5.html">
+                            <img src="C:\Tạo lập web\Web Orange\sản phẩm\homelab Kcnang.png" class="card-img-top" alt="Responsive image" width="200" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Kem chống nắng vật lý Homelab Tone-up SPF 50+</p>
+                            <!-- Price -->
+                            <p class="price">340.000 VNĐ</p>
+                            <a href="#" data-name="Kem chống nắng" data-price="20"
+                                class="cartBtn btn btn-light pl-5 pr-5">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <!-- Image -->
+                        <a href="item6.html">
+                        <img src="C:\Tạo lập web\Web Orange\sản phẩm\sữa rửa mặt nghệ Hưng Yên 140ml.jpg" class="card-img-top" alt="Responsive image" width="200" height="380">
+                        </a>
+                        <div class="card-body">
+                            <!-- Name -->
+                            <p class="name card-text" style="height: 50px;">Sữa rửa mặt Cocoon nghệ Hưng Yên 140ml</p>
+                            <!-- Price -->
+                            <p class="price">120.000VNĐ</p>
+                            <a href="#" data-name="Sữa rửa mặt nghệ Hưng Yên" data-price="20"
+                                class="cartBtn btn btn-light pl-5 pr-5">Thêm vào giỏ hàng</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart -->
+        <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="showCart table table-borderless">
+
+                        </table>
+                        <div>
+                            <strong>Total price: R<span class="cartTotal"></span></strong>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                        <a href="cart.html" type="button" class="btn btn-light" href="">Check Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="pt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-sm">
+                    <!-- Contact -->
+                    <h6>Contact</h6>
+                    <p class="contact">cskhOrange@gmail.com <br></p>
+                    <p class="contact">(012) 345 6789<br></p>
+                    <p class="contact"> 1 Mỹ Đình, Phường Mỹ Đình 1, Quận Nam Từ Liêm, Hà Nội</p>
+                </div>
+                <div class="col-sm">
+                    <!-- Keep In Touch -->
+                </div>
+                <div class="col-sm">
+                    <!-- Support -->
+                    <h6>Support</h6>
+                    <p class="support">FAQ <br></p>
+                    <p class="support">Stocklist <br></p>
+                    <p class="support">Press<br></p>
+                    <p class="support">Affiliates<br></p>
+                </div>
+                <div class="col-sm">
+                    <!-- Social Media -->
+                    <a class="social-media-links" target="_blank" href="https://www.facebook.com/">
+                        <img class="social-media-logos" alt="Responsive image" src="C:\Tạo lập web\Web Orange\ảnh\Facebook logo.png" width="50" height="50">
+                    </a>
+                    <a class="social-media-links" target="_blank" href="https://www.messenger.com/">
+                        <img class="social-media-logos" alt="Responsive image" src="C:\Tạo lập web\Web Orange\ảnh\Facebook messenger logo.png" width="50" height="50">
+                    </a>
+                    <a class="social-media-links" target="_blank" href="https://www.tiktok.com/@lpettvjc8ug?_t=8orG4ijvUKf&_r=1">
+                        <img class="social-media-logos" alt="Responsive image" src="C:\Tạo lập web\Web Orange\sản phẩm\tiktok.jpg" width="50" height="50">
+                    </a>
+
+                    </a>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+        <!-- Copyright and Terms -->
+        &copy; 2024 My Website. All rights reserved.
+    </footer>
+   
+</body>
+</html>
